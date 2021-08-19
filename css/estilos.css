@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    font-size: 92.5%;   
+    }
+body{
+    margin:0;  
+    background-color:#aaf98e;
+}
+form{
+    background: orangered;
+    text-decoration-color: white;
+    font-size:1rem;
+    width: 20%;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-top:2rem;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 0.7rem;
+}
+.fondos{
+    background-color:#aaf98e;
+}
+.titulos{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    
+    
+}
+.guirnalda{
+    display: flex;
+    background-color: #aaf98e;
+}
+.imagen1{
+    width: 100%;
+    height: 5rem;
+}
+.reestablecer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    padding: 0.2rem 0.4rem;
+    border: PowderBlue 0.2rem solid;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.registrarme{
+    padding: 0.2rem 0.4rem;
+    border: PowderBlue 0.2rem solid;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.session{
+    background-color: aliceblue;
+    border-radius: 5rem;
+    align-items: center;
+    margin-left: 3.5rem;
+    padding: 3px 10px;
+    border: PowderBlue 0.2rem solid;
+    border-radius: 0.3rem;
+    text-align: center;   
+}
+a{
+    outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+.grid{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-areas: "item1 item2 item3 " 
+                          "item4 item5 item6";
+                          
+    grid-gap: 3.5rem 3.5rem;
+    justify-content: center;
+}
+.imagen11{
+    grid-area: item1;
+}
+.imagen2{
+    grid-area: item2;
+}
+.imagen3{
+    grid-area: item3;
+}
+.imagen4{
+    grid-area: item4;
+}
+.imagen5{
+    grid-area: item5;
+}
+.imagen6{
+    grid-area: item6;
+}
+.imagenIndex{
+    width: 10rem;
+    height: 10rem;
+    margin-top:30px; 
+}
+p{
+    text-align: center;
+}
+table{width: 100%;
+    height: 0 auto; 
+    border: solid 1px black;
+}

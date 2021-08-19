@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	
+
+	<title>Compras</title>
+</head>
+<header >
+	<div class="guirnalda"><img src="img/guirnalda.png" class="imagen1"></div>
+</header>
+	<body>
+		
+			<h2 class="titulos"> Compras </h2>
+
+		<form action="Compras.php" method ="POST">
+
+				<label>Articulo: </label>
+				<input type="text"name="articulo" required><br><br>
+
+				<label>Cantidad: </label>
+				<input type="number"name="cantidad" class="cantidad"  min="1" required><br><br>
+				
+				
+				<label> Precio Total de la compra $: <label>
+				<input type="number"name="PrecioCosto" required><br><br>
+				
+				<input type= "submit" value="Siguiente" class="session"><br><br>
+				<a href="index.html" target:"_blank" class="session"> VOLVER </a>
+		</form>
+
+		
+	</body>
+</html>

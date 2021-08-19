@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	
+
+	<title>FormularioRegistro</title>
+</head>
+<header >
+	<div class="guirnalda"><img src="img/guirnalda.png" class="imagen1"></div>
+</header>
+<body>
+	
+	<div id="content" class="fondos">
+		<h1 class="titulos">Bienvenido al kiosko de Martin </h1>
+		<form action="registro.php" method="POST">
+	        
+		            <label>Nombres</label>
+		            <input type="text" name="nombre" placeholder="Nombres" required/></br>
+		       
+		           <label>Apellidos</label>
+		            <input type="text" name="apellido" placeholder="Apellidos" required/></br>
+		       		<label>Mail</label>
+		            <input type="text" name="Mail" placeholder="example@mail.com" required/></br>
+		       
+		            <label>Contraseña</label>
+		            <input type="password" name="pass" placeholder="**********************" required/></br>
+		       
+		            <label>Repetir Contraseña</label>
+		            <input type="password" name="rpass" placeholder="**********************" required/></br>
+		        
+		           <label><input type="submit" value="Registrarme" class="registrarme"></input></label>
+		            <label><input type="reset" value="Reestablecer"class="reestablecer"></input></label><br>
+					<a href="inicio.html" class="session"> Iniciar sesion            </a>	
+		       
+				
+		</form>
+		
+	</div>
+</body>
+
+</html>

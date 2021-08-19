@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="JS/jquery-1.11.3.min.js" ></script>
+		<link rel="stylesheet" href="css/estilos.css">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	
+		<title>Ventas</title>
+	</head>
+	<header >
+		<div class="guirnalda"><img src="img/guirnalda.png" class="imagen1"></div>
+	</header>
+
+	<body>
+		
+			<h2 class="titulos"> Ventas </h2>
+
+		<form action="Ventas.php" method ="POST">
+				<label>Articulo: </label>
+				<input type="text"name="articulo" required><br><br>
+
+				<label>Cantidad: </label>
+				<input type="number"name="cantidad" class="cantidad" min="1" required><br><br>
+				
+				<label>Precio Unitario </label>
+				<input type="number"name="preciounitario" class="preciounitario" required><br><br>
+
+				<input type="button" id="button1" value="SubTotal" class="session"/>
+				 <p class="1" name="resultado" class="resultado"></p>
+
+			
+				<label> TOTAL $: <label>
+				<input type="number"name="PreciodeVenta" required><br><br>
+				
+
+				<input type= "submit" value="Siguiente" class="session"><br><br>
+				<a href="index.html" target:"_blank" class="session"> VOLVER </a> 
+		</form>
+
+	</body>
+</html>
+<script>
+	
+					var a= "";
+					var b= "";
+					var resultado=document.getElementsByTagName('resultado').value;
+
+					var total=$("#button1");
+					total.click(tot);
+
+						function tot (){
+							a= $(".cantidad").val();
+							b= $(".preciounitario").val();
+							resultado= a*b;
+							$(".1").html(resultado+"$");
+							get();
+							}
+
+					 	function get() {
+
+
+						console.log (resultado);
+						}
+
+
+
+</script>
